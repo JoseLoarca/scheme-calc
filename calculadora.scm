@@ -1,0 +1,13 @@
+(display "****   José Loarca - 17001087  ****\n")
+(display "**** Calculadora FISICC - CC1N ****\n")
+(define input "")
+(define (calculadora)
+  (display "Por favor ingrese una operación: ")
+  (set! input (read-line))
+  (if (string=? input "quit")
+      (display "Saliendo...\nGracias por usar nuestra calculadora.")
+      (exit-handler)
+      )
+)
+
+(calculadora)
